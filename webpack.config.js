@@ -14,11 +14,6 @@ module.exports = {
     }),
     new Dotenv(),
   ],
-  output: {
-    publicPath: '/',
-    path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
-  },
   module: {
     rules: [
       {
