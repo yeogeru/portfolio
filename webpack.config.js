@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 
 module.exports = {
-  // FIXME : modify your project name
   name: 'portfolio',
   entry: './src/index.tsx',
   plugins: [

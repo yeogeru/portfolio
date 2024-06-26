@@ -9,7 +9,7 @@ module.exports = merge(config, {
   mode: 'production',
   devtool: 'source-map',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     filename: '[name].[contenthash].js',
     clean: true,
     publicPath: '/',
