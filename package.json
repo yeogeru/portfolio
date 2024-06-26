@@ -2,7 +2,6 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yeogeru.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,7 +11,6 @@
     "@types/react": "^18.2.77",
     "@types/react-dom": "^18.2.25",
     "dotenv-webpack": "^8.1.0",
-    "gh-pages": "^6.1.1",
     "npm": "^10.8.1",
     "postcss-loader": "^8.1.1",
     "react": "^18.2.0",
@@ -46,8 +44,6 @@
     "webpack-merge": "^5.10.0"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "webpack serve --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js",
     "test": "react-scripts test",
