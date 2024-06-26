@@ -46,6 +46,8 @@
     "webpack-merge": "^5.10.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack serve --config webpack.dev.config.js",
     "build": "webpack --config webpack.prod.config.js",
     "test": "react-scripts test",
