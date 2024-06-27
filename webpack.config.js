@@ -9,6 +9,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: './public/index.html',
+      hash: true,
+      favicon: "./public/favicon.ico"
     }),
     new Dotenv(),
   ],
