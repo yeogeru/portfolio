@@ -36,19 +36,15 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
         type: 'asset/resource',
         use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[hash].[ext]',
-            },
-          },
           {
             loader: 'url-loader',
             options: {
               limit: 10000,
+              fallback: "file-loader",
+              name: '[hash].[ext]',
             },
           },
         ],
